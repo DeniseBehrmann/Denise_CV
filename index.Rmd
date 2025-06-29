@@ -1,0 +1,74 @@
+---
+name: "Denise Behrmann"
+title: "Data Analyst | Cybersecurity Learner"
+output:
+  pagedown::html_resume:
+    css: ["resume-dark.css"]
+    self_contained: true
+---
+
+# Denise Behrmann
+
+Curious and adaptable, with a foundation in pharmaceutical science and diverse work experience—from QA game testing and leading a Google data team, to supervisory roles in hospitality. Completed the Google Data Analytics Certificate and now building skills in cybersecurity, including digital forensics and penetration testing. Passionate about remote tech work and hands-on problem-solving.
+
+::: aside
+
+## 📫 Contact  
+📧 denisebehrmann88@gmail.com  \  
+🌐 [github.com/denisebehrmann](https://github.com/denisebehrmann)  \  
+💼 [linkedin.com/in/YOURPROFILE](https://linkedin.com/in/YOURPROFILE)  
+
+## 🛠️ Skills  
+- German (native), English (fluent)  
+- SQL, Excel, R, ggplot2, dplyr, Tableau  
+- Linux, Wireshark, TryHackMe, Blue Teaming  
+- Independent, analytical, leadership  
+
+## 📜 Certifications  
+- Google Data Analytics Certificate (2025)  
+- Certificate in Accommodation Management (MTU)  
+- Security Analyst Training (in progress)  
+- QQI Level 5 Animal Care  
+
+:::
+
+# Projects
+
+## Fitbit Case Study – R & Data Viz  
+Used Kaggle Fitbit data to analyze activity and sleep trends. Built smooth and color-coded graphs with RMarkdown.  
+**Tools:** R, dplyr, ggplot2  
+[View Project on GitHub](https://github.com/denisebehrmann/fitbit-case-study)
+
+## TryHackMe Labs – Cybersecurity Writeups  
+Interactive SOC and network security labs documented as part of my cybersecurity journey.  
+**Tools:** Linux, Splunk, Wireshark  
+[View Labs](https://github.com/denisebehrmann/tryhackme-writeups)
+
+# Experience
+
+**Accommodation Supervisor – Druids Glen Hotel**  
+*2024 – Present, Co. Wicklow*  
+Oversee daily housekeeping operations in a 5-star hotel. Handle scheduling, room checks, and guest service quality.
+
+**Supervisor – Parkview Hotel**  
+*2020 – 2024, Co. Wicklow*  
+Progressed from Room Attendant. Sponsored accommodation management certification. Trained and led housekeeping staff.
+
+**Team Lead – CPL on-site with Google**  
+*2011 – 2013, Dublin*  
+Led a team of data evaluators. Coordinated quality control, scheduling, and workflow management across global teams.
+
+**QA Tester – Keywords & Activision**  
+*2013 – 2016, Dublin*  
+Tested games in German for linguistic and functionality issues. Logged bugs and conducted regression testing.
+
+**Veterinary Assistant – Roundwood Vets**  
+*2017 – 2018, Wicklow*  
+Supported clinical procedures, managed reception and client communications.
+
+# Education
+
+**Google Data Analytics Certificate**, Coursera (2025)  
+**Pharmaceutical Engineering**, OWL University of Applied Sciences (3 semesters, 2008–2010)  
+**Certificate in Accommodation Management**, MTU (2022)  
+**QQI Level 5 Animal Care**, Bray Institute (2017)
