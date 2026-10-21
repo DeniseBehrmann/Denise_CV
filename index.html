@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Denise Behrmann's professional CV, featuring experience in operations, team leadership, workforce planning, quality assurance, and data analytics.">
+  <meta name="description" content="Denise Behrmann's CV, highlighting experience in operations, team leadership, workforce planning, and quality assurance.">
 
   <meta name="theme-color" content="#14283f">
 
@@ -59,10 +59,6 @@
       outline-offset: 4px;
     }
 
-    h1, h2, h3 {
-      line-height: 1.3;
-    }
-
     ul {
       padding-left: 20px;
     }
@@ -70,8 +66,6 @@
     li {
       margin-bottom: 7px;
     }
-
-    /* Navigation */
 
     .topbar {
       background: var(--navy);
@@ -114,8 +108,6 @@
       text-decoration: none;
     }
 
-    /* Page layout */
-
     .container {
       width: min(1120px, calc(100% - 40px));
       margin: 34px auto;
@@ -153,8 +145,6 @@
     .card-content {
       padding: 25px;
     }
-
-    /* Profile header */
 
     .profile-header {
       position: relative;
@@ -270,8 +260,6 @@
       text-decoration: none;
     }
 
-    /* Section headings */
-
     .section-heading {
       display: flex;
       align-items: center;
@@ -306,8 +294,6 @@
       font-size: 13px;
     }
 
-    /* Professional profile */
-
     .profile-text {
       margin-bottom: 14px;
       color: #435166;
@@ -318,8 +304,6 @@
     .profile-text:last-child {
       margin-bottom: 0;
     }
-
-    /* Experience timeline */
 
     .timeline {
       margin-left: 6px;
@@ -407,8 +391,6 @@
       color: var(--teal-dark);
     }
 
-    /* Skills */
-
     .skill-group {
       margin-bottom: 22px;
     }
@@ -437,8 +419,6 @@
       color: #35475b;
       font-size: 10px;
     }
-
-    /* Contact */
 
     .contact-list {
       margin: 0;
@@ -484,8 +464,6 @@
       font-weight: 650;
     }
 
-    /* Education and certifications */
-
     .detail-item {
       margin-bottom: 17px;
       padding-bottom: 17px;
@@ -521,52 +499,12 @@
       font-weight: 750;
     }
 
-    /* Projects */
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 18px;
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      background: #fbfcfe;
-    }
-
-    .project-card h3 {
-      margin: 0 0 8px;
-      color: var(--navy);
-      font-size: 13px;
-    }
-
-    .project-card p {
-      margin-bottom: 14px;
-      color: var(--muted);
-      font-size: 11px;
-    }
-
-    .project-link {
-      margin-top: auto;
-      font-size: 11px;
-      font-weight: 750;
-    }
-
-    /* Footer */
-
     footer {
       padding: 10px 20px 28px;
       color: #7a8797;
       text-align: center;
       font-size: 11px;
     }
-
-    /* Tablet */
 
     @media (max-width: 850px) {
       .container {
@@ -589,8 +527,6 @@
         padding: 30px;
       }
     }
-
-    /* Mobile */
 
     @media (max-width: 560px) {
       body {
@@ -650,10 +586,6 @@
         flex-direction: column;
       }
 
-      .project-grid {
-        grid-template-columns: 1fr;
-      }
-
       .header-actions {
         align-items: stretch;
       }
@@ -663,8 +595,6 @@
       }
     }
 
-    /* Print / PDF */
-
     @media print {
       @page {
         size: A4;
@@ -672,10 +602,9 @@
       }
 
       body {
-        background: #ffffff;
-        color: #222222;
+        background: #fff;
+        color: #222;
         font-size: 9pt;
-        line-height: 1.45;
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
       }
@@ -757,15 +686,6 @@
         font-size: 8.5pt;
       }
 
-      .project-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .project-card,
-      .detail-item {
-        break-inside: avoid;
-      }
-
       a {
         color: inherit;
         text-decoration: none;
@@ -775,8 +695,6 @@
 </head>
 
 <body>
-
-  <!-- NAVIGATION -->
 
   <nav class="topbar" aria-label="Main navigation">
     <div class="topbar-inner">
@@ -788,7 +706,6 @@
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
 
@@ -797,11 +714,7 @@
 
   <div class="container" id="top">
 
-    <!-- SIDEBAR -->
-
     <aside class="sidebar">
-
-      <!-- CONTACT -->
 
       <section class="card" id="contact">
         <div class="card-content">
@@ -855,8 +768,6 @@
         </div>
       </section>
 
-      <!-- CORE SKILLS -->
-
       <section class="card" id="skills">
         <div class="card-content">
 
@@ -896,7 +807,7 @@
           </div>
 
           <div class="skill-group">
-            <h3>Data & Technical Skills</h3>
+            <h3>Technical Skills</h3>
 
             <div class="skill-tags">
               <span class="skill-tag">Python</span>
@@ -921,7 +832,31 @@
         </div>
       </section>
 
-      <!-- CERTIFICATIONS -->
+      <section class="card" id="education">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">✓</div>
+            <h2>Education</h2>
+          </div>
+
+          <div class="detail-item">
+            <h3>Accommodation Management</h3>
+            <p>Munster Technological University (MTU), 2022</p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Pharmaceutical Engineering</h3>
+            <p>O.W.L. University, Germany — three semesters</p>
+          </div>
+
+          <div class="detail-item">
+            <h3>QQI Level 5 Animal Care</h3>
+            <p>Bray Institute of Further Education, 2017</p>
+          </div>
+
+        </div>
+      </section>
 
       <section class="card">
         <div class="card-content">
@@ -952,11 +887,7 @@
 
     </aside>
 
-    <!-- MAIN CONTENT -->
-
     <main class="main-content">
-
-      <!-- HEADER -->
 
       <header class="profile-header">
 
@@ -975,7 +906,6 @@
         </div>
 
         <div class="header-actions">
-
           <button
             class="button button-primary"
             type="button"
@@ -986,12 +916,9 @@
           <a class="button button-secondary" href="#experience">
             View Experience
           </a>
-
         </div>
 
       </header>
-
-      <!-- PROFESSIONAL PROFILE -->
 
       <section class="card" id="profile">
         <div class="card-content">
@@ -1031,8 +958,6 @@
         </div>
       </section>
 
-      <!-- PROFESSIONAL EXPERIENCE -->
-
       <section class="card" id="experience">
         <div class="card-content">
 
@@ -1049,18 +974,12 @@
 
           <div class="timeline">
 
-            <!-- WELOCALIZE -->
-
             <article class="timeline-item">
-
               <div class="job-header">
                 <div>
-                  <h3 class="job-title">
-                    Bilingual Metadata Specialist
-                  </h3>
+                  <h3 class="job-title">Bilingual Metadata Specialist</h3>
                   <div class="company-name">Welocalize</div>
                 </div>
-
                 <span class="job-date">2025–Present</span>
               </div>
 
@@ -1071,7 +990,6 @@
                     accuracy, attention to detail, and adherence
                     to established guidelines.
                   </li>
-
                   <li>
                     Apply analytical thinking and a quality-focused
                     approach to support consistent, high-quality
@@ -1079,29 +997,18 @@
                   </li>
                 </ul>
               </div>
-
             </article>
 
-            <!-- DRUIDS GLEN -->
-
             <article class="timeline-item">
-
               <div class="job-header">
                 <div>
-                  <h3 class="job-title">
-                    Accommodation Supervisor
-                  </h3>
-
+                  <h3 class="job-title">Accommodation Supervisor</h3>
                   <div class="company-name">
                     Druids Glen Hotel &amp; Golf Resort
                   </div>
-
-                  <div class="job-location">
-                    Wicklow, Ireland
-                  </div>
+                  <div class="job-location">Wicklow, Ireland</div>
                 </div>
-
-                <span class="job-date">May 2024–Aug 2025</span>
+                <span class="job-date">May 2024–2025</span>
               </div>
 
               <div class="job-description">
@@ -1111,93 +1018,64 @@
                     holiday planning, and daily task allocation
                     to support efficient operations.
                   </li>
-
                   <li>
-                    Supervised, trained, and supported team members
-                    to maintain operational standards and service
-                    quality.
+                    Supervised and trained team members to maintain
+                    operational standards and service quality.
                   </li>
-
                   <li>
                     Managed daily accommodation operations,
-                    addressing staffing challenges and resolving
-                    operational issues.
+                    resolving staffing challenges and operational
+                    issues.
                   </li>
-
                   <li>
                     Handled guest complaints and conflict resolution
-                    professionally to maintain service standards.
+                    professionally.
                   </li>
                 </ul>
               </div>
-
             </article>
 
-            <!-- PARKVIEW HOTEL -->
-
             <article class="timeline-item">
-
               <div class="job-header">
                 <div>
-                  <h3 class="job-title">
-                    Accommodation Supervisor
-                  </h3>
-
+                  <h3 class="job-title">Accommodation Supervisor</h3>
                   <div class="company-name">Parkview Hotel</div>
-
-                  <div class="job-location">
-                    Wicklow, Ireland
-                  </div>
+                  <div class="job-location">Wicklow, Ireland</div>
                 </div>
-
                 <span class="job-date">Nov 2020–Apr 2024</span>
               </div>
 
               <div class="job-description">
                 <ul>
                   <li>
-                    Managed staff schedules, working hours,
-                    holiday requests, and workload distribution
-                    to maintain smooth daily operations.
+                    Managed staff schedules, working hours, holiday
+                    requests, and workload distribution to maintain
+                    smooth daily operations.
                   </li>
-
                   <li>
                     Trained and supervised team members, supporting
                     consistent performance and adherence to
                     operational procedures.
                   </li>
-
                   <li>
                     Oversaw daily accommodation operations and
                     ensured compliance with health, safety,
                     and hygiene standards.
                   </li>
-
                   <li>
                     Resolved operational issues and guest complaints
-                    to maintain service quality and customer
-                    satisfaction.
+                    to maintain service quality and satisfaction.
                   </li>
                 </ul>
               </div>
-
             </article>
 
-            <!-- KEYWORDS INTERNATIONAL -->
-
             <article class="timeline-item">
-
               <div class="job-header">
                 <div>
-                  <h3 class="job-title">
-                    Localisation QA Tester – German
-                  </h3>
-
-                  <div class="company-name">
-                    Keywords International
-                  </div>
+                  <h3 class="job-title">Localisation QA Tester – German</h3>
+                  <div class="company-name">Keywords International</div>
                 </div>
-
                 <span class="job-date">Nov 2014–Apr 2016</span>
               </div>
 
@@ -1205,82 +1083,49 @@
                 <ul>
                   <li>
                     Tested video games for localisation defects,
-                    identifying and documenting bugs and
-                    language issues.
+                    documenting bugs and reviewing German translations
+                    for accuracy.
                   </li>
-
                   <li>
-                    Reviewed German translations and recommended
-                    corrections to improve linguistic accuracy
-                    and user experience.
-                  </li>
-
-                  <li>
-                    Retested reported issues to verify fixes and
-                    provided daily progress updates to team leads
-                    and QA managers.
+                    Recommended translation improvements, verified
+                    bug fixes, and reported progress to team leads
+                    and QA managers daily.
                   </li>
                 </ul>
               </div>
-
             </article>
 
-            <!-- ACTIVISION -->
-
             <article class="timeline-item">
-
               <div class="job-header">
                 <div>
-                  <h3 class="job-title">
-                    Localisation QA Tester – German
-                  </h3>
-
+                  <h3 class="job-title">Localisation QA Tester – German</h3>
                   <div class="company-name">Activision</div>
                 </div>
-
                 <span class="job-date">Sep 2013–Oct 2014</span>
               </div>
 
               <div class="job-description">
                 <ul>
                   <li>
-                    Tested company games for localisation defects,
-                    identifying and documenting bugs and
-                    translation issues.
+                    Tested company games, identifying and documenting
+                    bugs and translation issues.
                   </li>
-
                   <li>
-                    Recommended improvements to German translations
-                    and verified that previously reported issues
-                    had been resolved.
-                  </li>
-
-                  <li>
-                    Reported testing progress and outstanding
-                    issues to team leads and QA managers daily.
+                    Suggested German translation improvements,
+                    verified fixes, and reported testing progress
+                    to team leads and QA managers daily.
                   </li>
                 </ul>
               </div>
-
             </article>
 
-            <!-- CPL / GOOGLE -->
-
             <article class="timeline-item">
-
               <div class="job-header">
                 <div>
                   <h3 class="job-title">Team Lead</h3>
-
-                  <div class="company-name">
-                    CPL (On-Site at Google)
-                  </div>
-
-                  <div class="job-location">
-                    Dublin, Ireland
-                  </div>
+                  <div class="company-name">CPL (On-Site at Google)</div>
+                  <div class="job-location">Dublin, Ireland</div>
                 </div>
-
                 <span class="job-date">Sep 2011–Sep 2013</span>
               </div>
 
@@ -1288,137 +1133,30 @@
                 <ul>
                   <li>
                     Led an operations team of Data Evaluators,
-                    coordinating staffing, schedules, working
-                    hours, and holiday planning to maintain
-                    operational coverage.
+                    coordinating staffing, schedules, working hours,
+                    and holiday planning to maintain operational
+                    coverage.
                   </li>
-
                   <li>
                     Trained, coached, and supported team members,
                     monitoring performance against productivity
                     and quality targets.
                   </li>
-
                   <li>
-                    Managed daily workload allocation and
-                    operational priorities to support efficiency
-                    and delivery requirements.
+                    Managed workload allocation and operational
+                    priorities to support efficiency and delivery.
                   </li>
-
                   <li>
-                    Conducted quality monitoring, handled
-                    escalations, and supported the resolution
-                    of operational issues.
+                    Conducted quality monitoring, handled escalations,
+                    and supported the resolution of operational issues.
                   </li>
-
                   <li>
-                    Contributed process improvements to enhance
-                    productivity and user experience.
-                  </li>
-
-                  <li>
-                    Liaised with global teams and management
-                    to communicate operational updates and
-                    support strategic initiatives.
+                    Contributed process improvements and liaised
+                    with global teams and management on operational
+                    initiatives.
                   </li>
                 </ul>
               </div>
-
-            </article>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- EDUCATION -->
-
-      <section class="card" id="education">
-        <div class="card-content">
-
-          <div class="section-heading">
-            <div class="section-icon" aria-hidden="true">03</div>
-            <h2>Education</h2>
-          </div>
-
-          <div class="detail-item">
-            <h3>Accommodation Management</h3>
-            <p>
-              Munster Technological University (MTU) · 2022
-            </p>
-          </div>
-
-          <div class="detail-item">
-            <h3>Pharmaceutical Engineering</h3>
-            <p>
-              O.W.L. University, Germany · Three semesters
-            </p>
-          </div>
-
-          <div class="detail-item">
-            <h3>QQI Level 5 Animal Care</h3>
-            <p>
-              Bray Institute of Further Education · 2017
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-
-      <section class="card" id="projects">
-        <div class="card-content">
-
-          <div class="section-heading">
-            <div class="section-icon" aria-hidden="true">04</div>
-            <h2>Selected Projects</h2>
-          </div>
-
-          <p class="section-intro">
-            Data analytics and visualisation projects demonstrating
-            analytical thinking, technical skills, and the ability
-            to communicate insights through data.
-          </p>
-
-          <div class="project-grid">
-
-            <article class="project-card">
-
-              <h3>Fitbit Case Study</h3>
-
-              <p>
-                Analysed Fitbit data using R, dplyr, and ggplot2
-                as part of a data analytics project.
-              </p>
-
-              <a
-                class="project-link"
-                href="https://rpubs.com/H_exe/1326257"
-                target="_blank"
-                rel="noopener noreferrer">
-                View Project →
-              </a>
-
-            </article>
-
-            <article class="project-card">
-
-              <h3>Video Game Sales Dashboard</h3>
-
-              <p>
-                Created a Tableau dashboard using publicly available
-                video game sales data from Kaggle.
-              </p>
-
-              <a
-                class="project-link"
-                href="https://public.tableau.com/app/profile/hexe/viz/GameSales_17513967623470/Dashboard2"
-                target="_blank"
-                rel="noopener noreferrer">
-                View Dashboard →
-              </a>
-
             </article>
 
           </div>
