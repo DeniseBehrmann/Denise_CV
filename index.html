@@ -1,115 +1,1438 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Denise Behrmann | CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Denise Behrmann's professional CV, featuring experience in operations, team leadership, workforce planning, quality assurance, and data analytics.">
+
+  <meta name="theme-color" content="#14283f">
+
+  <title>Denise Behrmann | Professional CV</title>
+
   <style>
+    :root {
+      --navy: #14283f;
+      --navy-light: #203d59;
+      --teal: #43c6b0;
+      --teal-dark: #168778;
+      --background: #f3f6fa;
+      --white: #ffffff;
+      --text: #293748;
+      --muted: #68788c;
+      --border: #e1e8f0;
+      --soft-teal: #e5f7f3;
+      --shadow: 0 8px 28px rgba(20, 40, 63, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      display: flex;
-      flex-direction: row;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .sidebar {
-      width: 300px;
-      background-color: #1e1e1e;
-      padding: 20px;
-      box-sizing: border-box;
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100vh;
-      overflow-y: auto;
-    }
-
-    .sidebar h2 {
-      color: #81d4fa;
-      border-bottom: 1px solid #444;
-      padding-bottom: 5px;
-    }
-
-    .sidebar a {
-      color: #90caf9;
-      text-decoration: none;
-    }
-
-    .main-content {
-      flex: 1;
-      padding: 40px;
-      margin-right: 320px;
-      box-sizing: border-box;
-    }
-
-    h1, h2, h3 {
-      color: #81d4fa;
+      background: var(--background);
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
     }
 
     a {
-      color: #ffab91;
+      color: var(--teal-dark);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--teal);
+      outline-offset: 4px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.3;
     }
 
     ul {
-      padding-left: 1.2em;
+      padding-left: 20px;
     }
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: 7px;
+    }
+
+    /* Navigation */
+
+    .topbar {
+      background: var(--navy);
+      color: var(--white);
+      padding: 15px 24px;
+    }
+
+    .topbar-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      color: #dce8f2;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--teal);
+      text-decoration: none;
+    }
+
+    /* Page layout */
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 34px auto;
+      display: grid;
+      grid-template-columns: 290px minmax(0, 1fr);
+      align-items: start;
+      gap: 26px;
+    }
+
+    .sidebar,
+    .main-content {
+      min-width: 0;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    /* Profile header */
+
+    .profile-header {
+      position: relative;
+      overflow: hidden;
+      padding: 38px;
+      background: linear-gradient(
+        135deg,
+        var(--navy),
+        var(--navy-light)
+      );
+      color: var(--white);
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-header::after {
+      content: "";
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      top: -115px;
+      right: -75px;
+      border: 35px solid rgba(67, 198, 176, 0.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .profile-header h1 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 12px;
+      font-size: clamp(32px, 4vw, 43px);
+      letter-spacing: -1.2px;
+    }
+
+    .profile-subtitle {
+      position: relative;
+      z-index: 1;
+      max-width: 520px;
+      margin-bottom: 23px;
+      color: #d9e6f1;
+      font-size: 15px;
+    }
+
+    .profile-tags {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #edf5fa;
+      font-size: 11px;
+    }
+
+    .header-actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 750;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--teal);
+      color: var(--navy);
+    }
+
+    .button-primary:hover {
+      background: #69d9c6;
+      text-decoration: none;
+    }
+
+    .button-secondary {
+      border-color: #7d93a8;
+      background: transparent;
+      color: var(--white);
+    }
+
+    .button-secondary:hover {
+      background: rgba(255, 255, 255, 0.09);
+      text-decoration: none;
+    }
+
+    /* Section headings */
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 21px;
+    }
+
+    .section-icon {
+      display: flex;
+      width: 35px;
+      height: 35px;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      background: var(--soft-teal);
+      color: var(--teal-dark);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 19px;
+      font-weight: 750;
+    }
+
+    .section-intro {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Professional profile */
+
+    .profile-text {
+      margin-bottom: 14px;
+      color: #435166;
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+    .profile-text:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Experience timeline */
+
+    .timeline {
+      margin-left: 6px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 29px 25px;
+      border-left: 2px solid var(--border);
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+      border-left-color: transparent;
+    }
+
+    .timeline-item::before {
+      position: absolute;
+      top: 5px;
+      left: -7px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid var(--white);
+      border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 2px #d8f2ed;
+      content: "";
+    }
+
+    .job-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px 15px;
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      margin: 0 0 4px;
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 750;
+    }
+
+    .company-name {
+      color: var(--teal-dark);
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .job-location {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .job-date {
+      display: inline-block;
+      padding: 4px 9px;
+      border-radius: 5px;
+      background: #edf2f7;
+      color: #526277;
+      font-size: 10px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+
+    .job-description {
+      color: #526176;
+      font-size: 12px;
+      line-height: 1.75;
+    }
+
+    .job-description ul {
+      margin: 9px 0 0;
+      padding-left: 18px;
+    }
+
+    .job-description li {
+      padding-left: 2px;
+      margin-bottom: 7px;
+    }
+
+    .job-description li::marker {
+      color: var(--teal-dark);
+    }
+
+    /* Skills */
+
+    .skill-group {
+      margin-bottom: 22px;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-group h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 12px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .skill-tag {
+      padding: 6px 9px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: #35475b;
+      font-size: 10px;
+    }
+
+    /* Contact */
+
+    .contact-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 17px;
+    }
+
+    .contact-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-icon {
+      display: flex;
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      background: var(--soft-teal);
+      color: var(--teal-dark);
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .contact-label {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .contact-value {
+      color: var(--navy);
+      font-size: 11px;
+      font-weight: 650;
+    }
+
+    /* Education and certifications */
+
+    .detail-item {
+      margin-bottom: 17px;
+      padding-bottom: 17px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .detail-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .detail-item h3 {
+      margin: 0 0 5px;
+      color: var(--navy);
+      font-size: 12px;
+    }
+
+    .detail-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 7px;
+      padding: 3px 7px;
+      border-radius: 4px;
+      background: #fff4d6;
+      color: #795b0a;
+      font-size: 10px;
+      font-weight: 750;
+    }
+
+    /* Projects */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: #fbfcfe;
+    }
+
+    .project-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    .project-card p {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .project-link {
+      margin-top: auto;
+      font-size: 11px;
+      font-weight: 750;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 10px 20px 28px;
+      color: #7a8797;
+      text-align: center;
+      font-size: 11px;
+    }
+
+    /* Tablet */
+
+    @media (max-width: 850px) {
+      .container {
+        grid-template-columns: 1fr;
+        width: min(720px, calc(100% - 32px));
+        margin-top: 24px;
+      }
+
+      .main-content {
+        order: -1;
+      }
+
+      .sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+      }
+
+      .profile-header {
+        padding: 30px;
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 560px) {
+      body {
+        font-size: 13px;
+      }
+
+      .topbar {
+        padding: 14px 16px;
+      }
+
+      .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .nav-links a {
+        font-size: 11px;
+      }
+
+      .container {
+        width: calc(100% - 24px);
+        margin: 14px auto;
+        gap: 16px;
+      }
+
+      .sidebar {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .profile-header {
+        padding: 25px 21px;
+      }
+
+      .profile-header h1 {
+        font-size: 32px;
+      }
+
+      .profile-subtitle {
+        font-size: 13px;
+      }
+
+      .section-heading h2 {
+        font-size: 17px;
+      }
+
+      .job-header {
+        flex-direction: column;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-actions {
+        align-items: stretch;
+      }
+
+      .button {
+        flex: 1;
+      }
+    }
+
+    /* Print / PDF */
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+
+      body {
+        background: #ffffff;
+        color: #222222;
+        font-size: 9pt;
+        line-height: 1.45;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .topbar,
+      .header-actions,
+      footer {
+        display: none !important;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 30% minmax(0, 1fr);
+        gap: 12px;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .card,
+      .profile-header {
+        box-shadow: none;
+        border-radius: 4px;
+      }
+
+      .card {
+        border: 1px solid #dce3eb;
+      }
+
+      .card-content {
+        padding: 12px;
+      }
+
+      .profile-header {
+        padding: 20px;
+      }
+
+      .profile-header h1 {
+        font-size: 25px;
+      }
+
+      .profile-header::after {
+        display: none;
+      }
+
+      .section-heading {
+        margin-bottom: 12px;
+      }
+
+      .section-heading h2 {
+        font-size: 14px;
+      }
+
+      .profile-text {
+        font-size: 9pt;
+      }
+
+      .timeline-item {
+        padding-bottom: 13px;
+      }
+
+      .job-title {
+        font-size: 10pt;
+      }
+
+      .job-description {
+        font-size: 8.5pt;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card,
+      .detail-item {
+        break-inside: avoid;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="main-content">
-    <h1>Denise Behrmann</h1>
-    <p>Certified Data Analyst with a science background, proficient in Python, R, SQL, Tableau, and Linux. Currently focusing on the CompTIA Network+ certification and cybersecurity skills on TryHackMe.</p>
 
-    <h2>Projects</h2>
-    <h3>Fitbit Case Study</h3>
-<p>Analyzed Fitbit data using R, dplyr, ggplot2. <a href="https://rpubs.com/H_exe/1326257">View on RPub</a></p>
-    <h3>Videogame Sales Dashboard</h3>
-<p>Simple dashboard created using public video game sales data available on kaggle.  <a href="https://public.tableau.com/app/profile/hexe/viz/GameSales_17513967623470/Dashboard2">View on Tableau</a></p>
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>WeLocalize</strong> – Billingual Metadata Specialist (2025–Present)</li>
-      <li><strong>Druids Glen Hotel</strong> – Accommodation Supervisor (2024–2025)</li>
-      <li><strong>Parkview Hotel</strong> – Supervisor (2020–2024)</li>
-      <li><strong>Keywords/Activision</strong> – QA Tester (2013–2016)</li>
-      <li><strong>Google (CPL)</strong> – Team Lead, Data Evaluators (2011–2013)</li>
-    </ul>
+  <!-- NAVIGATION -->
 
-    <h2>Education</h2>
-    <ul>
-      <li>Pharmaceutical Engineering – O.W.L. University, GE (3 semesters)</li>
-      <li>Accommodation Management – MTU (2022)</li>
-      <li>QQI Level 5 Animal Care – Bray Institute of Further Education (2017)</li>
-    </ul>
+  <nav class="topbar" aria-label="Main navigation">
+    <div class="topbar-inner">
+
+      <a class="brand" href="#top">DENISE BEHRMANN</a>
+
+      <div class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container" id="top">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+      <!-- CONTACT -->
+
+      <section class="card" id="contact">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">@</div>
+            <h2>Contact</h2>
+          </div>
+
+          <ul class="contact-list">
+
+            <li>
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <div>
+                <span class="contact-label">Email</span>
+                <a class="contact-value"
+                   href="mailto:denisebehrmann88@gmail.com">
+                  denisebehrmann88@gmail.com
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <span class="contact-icon" aria-hidden="true">GH</span>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a class="contact-value"
+                   href="https://github.com/denisebehrmann"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  GitHub Profile
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <span class="contact-icon" aria-hidden="true">in</span>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a class="contact-value"
+                   href="https://www.linkedin.com/in/denisebehrmann"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  LinkedIn Profile
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- CORE SKILLS -->
+
+      <section class="card" id="skills">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">+</div>
+            <h2>Core Skills</h2>
+          </div>
+
+          <div class="skill-group">
+            <h3>Operations & Project Coordination</h3>
+
+            <div class="skill-tags">
+              <span class="skill-tag">Operational Coordination</span>
+              <span class="skill-tag">Workflow Management</span>
+              <span class="skill-tag">Workload Planning</span>
+              <span class="skill-tag">Resource Allocation</span>
+              <span class="skill-tag">Process Improvement</span>
+              <span class="skill-tag">Quality Assurance</span>
+              <span class="skill-tag">Issue Resolution</span>
+              <span class="skill-tag">Escalation Management</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>People & Workforce Management</h3>
+
+            <div class="skill-tags">
+              <span class="skill-tag">Team Leadership</span>
+              <span class="skill-tag">Staff Scheduling</span>
+              <span class="skill-tag">Workforce Planning</span>
+              <span class="skill-tag">Working-Hour Coordination</span>
+              <span class="skill-tag">Holiday Planning</span>
+              <span class="skill-tag">Staff Training</span>
+              <span class="skill-tag">Coaching & Development</span>
+              <span class="skill-tag">Performance Monitoring</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Data & Technical Skills</h3>
+
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Wireshark</span>
+              <span class="skill-tag">HTML Basics</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Languages</h3>
+
+            <div class="skill-tags">
+              <span class="skill-tag">German</span>
+              <span class="skill-tag">English</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+
+      <section class="card">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">✓</div>
+            <h2>Certifications</h2>
+          </div>
+
+          <div class="detail-item">
+            <h3>Google Data Analytics Certificate</h3>
+            <p>2025</p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Accommodation Management</h3>
+            <p>Munster Technological University</p>
+          </div>
+
+          <div class="detail-item">
+            <h3>CompTIA Network+</h3>
+            <p>Currently studying towards certification.</p>
+            <span class="status">In progress</span>
+          </div>
+
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+      <!-- HEADER -->
+
+      <header class="profile-header">
+
+        <div class="eyebrow">Professional CV</div>
+
+        <h1>Denise Behrmann</h1>
+
+        <p class="profile-subtitle">
+          Operations Coordination · Team Leadership · Quality Assurance
+        </p>
+
+        <div class="profile-tags">
+          <span class="tag">Workforce Planning</span>
+          <span class="tag">Operational Improvement</span>
+          <span class="tag">German & English</span>
+        </div>
+
+        <div class="header-actions">
+
+          <button
+            class="button button-primary"
+            type="button"
+            onclick="window.print()">
+            Print / Save as PDF
+          </button>
+
+          <a class="button button-secondary" href="#experience">
+            View Experience
+          </a>
+
+        </div>
+
+      </header>
+
+      <!-- PROFESSIONAL PROFILE -->
+
+      <section class="card" id="profile">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">01</div>
+            <h2>Professional Profile</h2>
+          </div>
+
+          <p class="profile-text">
+            Operations professional with experience in team leadership,
+            workforce planning, operational coordination, quality
+            assurance, and process improvement. Currently working as
+            a Bilingual Metadata Specialist at Welocalize, with previous
+            experience leading an operations team at CPL on-site at
+            Google and managing staff and daily operations in the
+            hospitality sector.
+          </p>
+
+          <p class="profile-text">
+            Experienced in staff scheduling, working-hour coordination,
+            holiday planning, employee training, workflow management,
+            and performance monitoring. Skilled in identifying
+            operational issues, resolving escalations, coordinating
+            workloads, and supporting teams in meeting productivity
+            and quality expectations.
+          </p>
+
+          <p class="profile-text">
+            Combines hands-on management experience with analytical
+            thinking, strong organisational skills, and attention
+            to detail. Motivated to contribute to operational
+            efficiency, effective project delivery, and continuous
+            improvement in an operations or project management role.
+          </p>
+
+        </div>
+      </section>
+
+      <!-- PROFESSIONAL EXPERIENCE -->
+
+      <section class="card" id="experience">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">02</div>
+            <h2>Professional Experience</h2>
+          </div>
+
+          <p class="section-intro">
+            Experience across metadata operations, team leadership,
+            workforce coordination, hospitality supervision, and
+            localisation quality assurance.
+          </p>
+
+          <div class="timeline">
+
+            <!-- WELOCALIZE -->
+
+            <article class="timeline-item">
+
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">
+                    Bilingual Metadata Specialist
+                  </h3>
+                  <div class="company-name">Welocalize</div>
+                </div>
+
+                <span class="job-date">2025–Present</span>
+              </div>
+
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Carry out bilingual metadata tasks requiring
+                    accuracy, attention to detail, and adherence
+                    to established guidelines.
+                  </li>
+
+                  <li>
+                    Apply analytical thinking and a quality-focused
+                    approach to support consistent, high-quality
+                    outputs.
+                  </li>
+                </ul>
+              </div>
+
+            </article>
+
+            <!-- DRUIDS GLEN -->
+
+            <article class="timeline-item">
+
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">
+                    Accommodation Supervisor
+                  </h3>
+
+                  <div class="company-name">
+                    Druids Glen Hotel &amp; Golf Resort
+                  </div>
+
+                  <div class="job-location">
+                    Wicklow, Ireland
+                  </div>
+                </div>
+
+                <span class="job-date">May 2024–Aug 2025</span>
+              </div>
+
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Coordinated staff scheduling, working hours,
+                    holiday planning, and daily task allocation
+                    to support efficient operations.
+                  </li>
+
+                  <li>
+                    Supervised, trained, and supported team members
+                    to maintain operational standards and service
+                    quality.
+                  </li>
+
+                  <li>
+                    Managed daily accommodation operations,
+                    addressing staffing challenges and resolving
+                    operational issues.
+                  </li>
+
+                  <li>
+                    Handled guest complaints and conflict resolution
+                    professionally to maintain service standards.
+                  </li>
+                </ul>
+              </div>
+
+            </article>
+
+            <!-- PARKVIEW HOTEL -->
+
+            <article class="timeline-item">
+
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">
+                    Accommodation Supervisor
+                  </h3>
+
+                  <div class="company-name">Parkview Hotel</div>
+
+                  <div class="job-location">
+                    Wicklow, Ireland
+                  </div>
+                </div>
+
+                <span class="job-date">Nov 2020–Apr 2024</span>
+              </div>
+
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Managed staff schedules, working hours,
+                    holiday requests, and workload distribution
+                    to maintain smooth daily operations.
+                  </li>
+
+                  <li>
+                    Trained and supervised team members, supporting
+                    consistent performance and adherence to
+                    operational procedures.
+                  </li>
+
+                  <li>
+                    Oversaw daily accommodation operations and
+                    ensured compliance with health, safety,
+                    and hygiene standards.
+                  </li>
+
+                  <li>
+                    Resolved operational issues and guest complaints
+                    to maintain service quality and customer
+                    satisfaction.
+                  </li>
+                </ul>
+              </div>
+
+            </article>
+
+            <!-- KEYWORDS INTERNATIONAL -->
+
+            <article class="timeline-item">
+
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">
+                    Localisation QA Tester – German
+                  </h3>
+
+                  <div class="company-name">
+                    Keywords International
+                  </div>
+                </div>
+
+                <span class="job-date">Nov 2014–Apr 2016</span>
+              </div>
+
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Tested video games for localisation defects,
+                    identifying and documenting bugs and
+                    language issues.
+                  </li>
+
+                  <li>
+                    Reviewed German translations and recommended
+                    corrections to improve linguistic accuracy
+                    and user experience.
+                  </li>
+
+                  <li>
+                    Retested reported issues to verify fixes and
+                    provided daily progress updates to team leads
+                    and QA managers.
+                  </li>
+                </ul>
+              </div>
+
+            </article>
+
+            <!-- ACTIVISION -->
+
+            <article class="timeline-item">
+
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">
+                    Localisation QA Tester – German
+                  </h3>
+
+                  <div class="company-name">Activision</div>
+                </div>
+
+                <span class="job-date">Sep 2013–Oct 2014</span>
+              </div>
+
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Tested company games for localisation defects,
+                    identifying and documenting bugs and
+                    translation issues.
+                  </li>
+
+                  <li>
+                    Recommended improvements to German translations
+                    and verified that previously reported issues
+                    had been resolved.
+                  </li>
+
+                  <li>
+                    Reported testing progress and outstanding
+                    issues to team leads and QA managers daily.
+                  </li>
+                </ul>
+              </div>
+
+            </article>
+
+            <!-- CPL / GOOGLE -->
+
+            <article class="timeline-item">
+
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">Team Lead</h3>
+
+                  <div class="company-name">
+                    CPL (On-Site at Google)
+                  </div>
+
+                  <div class="job-location">
+                    Dublin, Ireland
+                  </div>
+                </div>
+
+                <span class="job-date">Sep 2011–Sep 2013</span>
+              </div>
+
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Led an operations team of Data Evaluators,
+                    coordinating staffing, schedules, working
+                    hours, and holiday planning to maintain
+                    operational coverage.
+                  </li>
+
+                  <li>
+                    Trained, coached, and supported team members,
+                    monitoring performance against productivity
+                    and quality targets.
+                  </li>
+
+                  <li>
+                    Managed daily workload allocation and
+                    operational priorities to support efficiency
+                    and delivery requirements.
+                  </li>
+
+                  <li>
+                    Conducted quality monitoring, handled
+                    escalations, and supported the resolution
+                    of operational issues.
+                  </li>
+
+                  <li>
+                    Contributed process improvements to enhance
+                    productivity and user experience.
+                  </li>
+
+                  <li>
+                    Liaised with global teams and management
+                    to communicate operational updates and
+                    support strategic initiatives.
+                  </li>
+                </ul>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+
+      <section class="card" id="education">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">03</div>
+            <h2>Education</h2>
+          </div>
+
+          <div class="detail-item">
+            <h3>Accommodation Management</h3>
+            <p>
+              Munster Technological University (MTU) · 2022
+            </p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Pharmaceutical Engineering</h3>
+            <p>
+              O.W.L. University, Germany · Three semesters
+            </p>
+          </div>
+
+          <div class="detail-item">
+            <h3>QQI Level 5 Animal Care</h3>
+            <p>
+              Bray Institute of Further Education · 2017
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+
+      <section class="card" id="projects">
+        <div class="card-content">
+
+          <div class="section-heading">
+            <div class="section-icon" aria-hidden="true">04</div>
+            <h2>Selected Projects</h2>
+          </div>
+
+          <p class="section-intro">
+            Data analytics and visualisation projects demonstrating
+            analytical thinking, technical skills, and the ability
+            to communicate insights through data.
+          </p>
+
+          <div class="project-grid">
+
+            <article class="project-card">
+
+              <h3>Fitbit Case Study</h3>
+
+              <p>
+                Analysed Fitbit data using R, dplyr, and ggplot2
+                as part of a data analytics project.
+              </p>
+
+              <a
+                class="project-link"
+                href="https://rpubs.com/H_exe/1326257"
+                target="_blank"
+                rel="noopener noreferrer">
+                View Project →
+              </a>
+
+            </article>
+
+            <article class="project-card">
+
+              <h3>Video Game Sales Dashboard</h3>
+
+              <p>
+                Created a Tableau dashboard using publicly available
+                video game sales data from Kaggle.
+              </p>
+
+              <a
+                class="project-link"
+                href="https://public.tableau.com/app/profile/hexe/viz/GameSales_17513967623470/Dashboard2"
+                target="_blank"
+                rel="noopener noreferrer">
+                View Dashboard →
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
   </div>
 
-  <div class="sidebar">
-    <h2>Contact</h2>
-    <p>Email: denisebehrmann88@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/denisebehrmann">https://github.com/denisebehrmann</a></p>
-    <p>LinkedIn <a href="https://www.linkedin.com/in/denisebehrmann">https://www.linkedin.com/in/denisebehrmann</a></p>
+  <footer>
+    <p>Denise Behrmann · Professional CV</p>
+  </footer>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, SQL, R, HTML (basic), Linux Terminal, Wireshark, Tableau</li>
-      <li>Analytical, Self-directed, Team leadership, Bilingual (German & English)</li>
-    </ul>
-
-    <h2>Certifications</h2>
-    <ul>
-       <li>CompTIA Network+ in progress</li>
-      <li>Google Data Analytics (2025)</li>
-      <li>Accommodation Management (MTU)</li>
-  </div>
 </body>
 </html>
-
