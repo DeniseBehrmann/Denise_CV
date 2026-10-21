@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Denise Behrmann | Management CV</title>
+
+<style>
+:root {
+  --navy: #18324b;
+  --teal: #168778;
+  --text: #303b48;
+  --muted: #687586;
+  --line: #dce4eb;
+  --light: #edf7f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e9edf2;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.42;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px;
+  background: var(--navy);
+}
+
+.toolbar button,
+.toolbar a {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.toolbar button {
+  background: #43c6b0;
+  color: #14283f;
+}
+
+.toolbar a {
+  background: white;
+  color: var(--navy);
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  padding: 13mm 15mm 12mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 3px 18px #00000012;
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  padding-bottom: 13px;
+  border-bottom: 3px solid var(--teal);
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 27pt;
+  letter-spacing: -0.7px;
+  line-height: 1.15;
+}
+
+.headline {
+  margin: 7px 0 10px;
+  color: var(--teal);
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 14px;
+  color: var(--muted);
+  font-size: 8.5pt;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.section h2 {
+  margin: 0 0 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--line);
+  color: var(--navy);
+  font-size: 12pt;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 7px;
+}
+
+.profile p {
+  line-height: 1.55;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill {
+  padding: 4px 8px;
+  background: var(--light);
+  border-radius: 3px;
+  color: #24564f;
+  font-size: 8.5pt;
+}
+
+.job {
+  margin-bottom: 12px;
+  break-inside: avoid;
+}
+
+.job-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+.job h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 10.5pt;
+}
+
+.date {
+  flex-shrink: 0;
+  color: var(--teal);
+  font-size: 8.5pt;
+  font-weight: bold;
+  text-align: right;
+}
+
+.company {
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+ul {
+  margin: 4px 0 0;
+  padding-left: 17px;
+}
+
+li {
+  margin-bottom: 3px;
+  padding-left: 1px;
+}
+
+li::marker {
+  color: var(--teal);
+}
+
+.education-item {
+  margin-bottom: 9px;
+}
+
+.education-item h3 {
+  margin: 0 0 2px;
+  color: var(--navy);
+  font-size: 9.5pt;
+}
+
+.education-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 9pt;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.project {
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  margin: 0 0 3px;
+  color: var(--navy);
+  font-size: 9.5pt;
+}
+
+.project p {
+  margin-bottom: 3px;
+  font-size: 9pt;
+}
+
+.footer {
+  position: absolute;
+  right: 15mm;
+  bottom: 6mm;
+  left: 15mm;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 8pt;
+}
+
+.page-two-heading {
+  margin-bottom: 15px;
+  color: var(--navy);
+  font-size: 19pt;
+}
+
+.page-two-intro {
+  margin-top: -9px;
+  margin-bottom: 17px;
+  color: var(--muted);
+  font-size: 9pt;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: 9.5pt;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .toolbar {
+    display: none !important;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 13mm 15mm 12mm;
+    box-shadow: none;
+    overflow: hidden;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .page:last-of-type {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .page {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 12px 0;
+    padding: 24px 20px 45px;
+    overflow: visible;
+  }
+
+  .job-heading {
+    flex-wrap: wrap;
+    gap: 2px 10px;
+  }
+
+  .footer {
+    position: static;
+    margin-top: 25px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="toolbar">
+  <button onclick="window.print()">Print / Save as PDF</button>
+  <a href="index.html">Back to Website</a>
+</div>
+
+<!-- PAGE ONE -->
+
+<main class="page">
+
+  <header>
+    <h1>Denise Behrmann</h1>
+
+    <p class="headline">
+      Operations Coordination | Team Leadership | Quality Assurance
+    </p>
+
+    <div class="contact">
+      <span>Email:
+        <a href="mailto:denisebehrmann88@gmail.com">
+          denisebehrmann88@gmail.com
+        </a>
+      </span>
+
+      <span>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/denisebehrmann">
+          linkedin.com/in/denisebehrmann
+        </a>
+      </span>
+
+      <span>
+        GitHub:
+        <a href="https://github.com/denisebehrmann">
+          github.com/denisebehrmann
+        </a>
+      </span>
+    </div>
+  </header>
+
+  <section class="section profile">
+    <h2>Professional Profile</h2>
+
+    <p>
+      Operations professional with experience in team leadership,
+      workforce planning, operational coordination, quality assurance,
+      and process improvement. Currently working as a Bilingual
+      Metadata Specialist at Welocalize, with previous experience
+      leading an operations team at CPL on-site at Google and managing
+      staff and daily operations in the hospitality sector.
+    </p>
+
+    <p>
+      Experienced in staff scheduling, working-hour coordination,
+      holiday planning, employee training, workflow management,
+      and performance monitoring. Skilled in resolving operational
+      issues, coordinating workloads, and supporting teams in meeting
+      productivity and quality expectations. Combines hands-on
+      management experience with analytical thinking, strong
+      organisational skills, and attention to detail, with a focus
+      on operational efficiency, project delivery, and continuous
+      improvement.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Core Competencies</h2>
+
+    <div class="skills">
+      <span class="skill">Operations Coordination</span>
+      <span class="skill">Workforce Planning</span>
+      <span class="skill">Staff Scheduling</span>
+      <span class="skill">Resource Allocation</span>
+      <span class="skill">Team Leadership</span>
+      <span class="skill">Staff Training</span>
+      <span class="skill">Performance Monitoring</span>
+      <span class="skill">Workflow Management</span>
+      <span class="skill">Quality Assurance</span>
+      <span class="skill">Process Improvement</span>
+      <span class="skill">Issue Resolution</span>
+      <span class="skill">Escalation Management</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Professional Experience</h2>
+
+    <article class="job">
+      <div class="job-heading">
+        <h3>Bilingual Metadata Specialist</h3>
+        <span class="date">2025–Present</span>
+      </div>
+
+      <div class="company">Welocalize</div>
+
+      <ul>
+        <li>
+          Carry out bilingual metadata tasks requiring accuracy,
+          attention to detail, and adherence to established guidelines.
+        </li>
+        <li>
+          Apply a quality-focused and analytical approach to support
+          consistent, high-quality outputs.
+        </li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-heading">
+        <h3>Accommodation Supervisor</h3>
+        <span class="date">May 2024–2025</span>
+      </div>
+
+      <div class="company">
+        Druids Glen Hotel &amp; Golf Resort | Wicklow, Ireland
+      </div>
+
+      <ul>
+        <li>
+          Coordinated staff scheduling, working hours, holiday
+          planning, and daily task allocation to support efficient
+          operations.
+        </li>
+        <li>
+          Supervised and trained staff, maintaining operational
+          standards and service quality.
+        </li>
+        <li>
+          Managed daily operations and resolved staffing,
+          guest-service, and operational issues.
+        </li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-heading">
+        <h3>Accommodation Supervisor</h3>
+        <span class="date">Nov 2020–Apr 2024</span>
+      </div>
+
+      <div class="company">
+        Parkview Hotel | Wicklow, Ireland
+      </div>
+
+      <ul>
+        <li>
+          Managed staff schedules, working hours, holiday requests,
+          and workload distribution to maintain smooth daily operations.
+        </li>
+        <li>
+          Trained and supervised team members, supporting consistent
+          performance and adherence to operational procedures.
+        </li>
+        <li>
+          Ensured compliance with health, safety, and hygiene
+          standards while resolving operational issues and guest
+          complaints.
+        </li>
+      </ul>
+    </article>
+
+  </section>
+
+  <div class="footer">
+    <span>Denise Behrmann | Professional CV</span>
+    <span>Page 1 of 2</span>
+  </div>
+
+</main>
+
+<!-- PAGE TWO -->
+
+<section class="page">
+
+  <h2 class="page-two-heading">Professional Experience &amp; Qualifications</h2>
+
+  <p class="page-two-intro">
+    Previous leadership, localisation quality assurance, education,
+    and professional development.
+  </p>
+
+  <section class="section">
+
+    <h2>Previous Experience</h2>
+
+    <article class="job">
+      <div class="job-heading">
+        <h3>Team Lead</h3>
+        <span class="date">Sep 2011–Sep 2013</span>
+      </div>
+
+      <div class="company">
+        CPL (On-Site at Google) | Dublin, Ireland
+      </div>
+
+      <ul>
+        <li>
+          Led an operations team of Data Evaluators, coordinating
+          staffing, schedules, working hours, and holiday planning
+          to maintain operational coverage.
+        </li>
+        <li>
+          Trained, coached, and supported team members, monitoring
+          performance against productivity and quality targets.
+        </li>
+        <li>
+          Managed daily workflows, workload allocation, and
+          operational priorities to support efficient delivery.
+        </li>
+        <li>
+          Conducted quality monitoring, handled escalations,
+          and supported the resolution of operational issues.
+        </li>
+        <li>
+          Contributed process improvements and liaised with global
+          teams and management on operational initiatives.
+        </li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-heading">
+        <h3>Localisation QA Tester – German</h3>
+        <span class="date">Nov 2014–Apr 2016</span>
+      </div>
+
+      <div class="company">Keywords International</div>
+
+      <ul>
+        <li>
+          Tested video games for localisation defects, documenting
+          bugs and reviewing German translations for accuracy.
+        </li>
+        <li>
+          Recommended translation improvements, verified bug fixes,
+          and reported progress to team leads and QA managers daily.
+        </li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-heading">
+        <h3>Localisation QA Tester – German</h3>
+        <span class="date">Sep 2013–Oct 2014</span>
+      </div>
+
+      <div class="company">Activision</div>
+
+      <ul>
+        <li>
+          Tested games for localisation defects, identifying
+          and documenting bugs and translation issues.
+        </li>
+        <li>
+          Recommended improvements to German translations,
+          verified fixes, and reported testing progress and
+          outstanding issues to QA management.
+        </li>
+      </ul>
+    </article>
+
+  </section>
+
+  <div class="columns">
+
+    <div>
+
+      <section class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <h3>Accommodation Management</h3>
+          <p>Munster Technological University (MTU), 2022</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Pharmaceutical Engineering</h3>
+          <p>O.W.L. University, Germany — three semesters</p>
+        </div>
+
+        <div class="education-item">
+          <h3>QQI Level 5 Animal Care</h3>
+          <p>Bray Institute of Further Education, 2017</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Certifications</h2>
+
+        <div class="education-item">
+          <h3>Google Data Analytics Certificate</h3>
+          <p>2025</p>
+        </div>
+
+        <div class="education-item">
+          <h3>CompTIA Network+</h3>
+          <p>Currently studying towards certification</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Languages</h2>
+
+        <p>German and English</p>
+      </section>
+
+    </div>
+
+    <div>
+
+      <section class="section">
+        <h2>Selected Projects</h2>
+
+        <article class="project">
+          <h3>Fitbit Case Study</h3>
+
+          <p>
+            Analysed Fitbit data using R, dplyr, and ggplot2.
+          </p>
+
+          <a href="https://rpubs.com/H_exe/1326257">
+            View project
+          </a>
+        </article>
+
+        <article class="project">
+          <h3>Video Game Sales Dashboard</h3>
+
+          <p>
+            Created a Tableau dashboard using publicly available
+            video game sales data.
+          </p>
+
+          <a href="https://public.tableau.com/app/profile/hexe/viz/GameSales_17513967623470/Dashboard2">
+            View dashboard
+          </a>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Technical Skills</h2>
+
+        <p>
+          Python, SQL, R, Tableau, Linux Terminal, Wireshark,
+          and basic HTML.
+        </p>
+      </section>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span>Denise Behrmann | Professional CV</span>
+    <span>Page 2 of 2</span>
+  </div>
+
+</section>
+
+</body>
+</html>
